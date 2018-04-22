@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'dotnet'
+        dir(path: 'CoreWebApp') {
+          sh 'dotnet restore'
+          sh 'dotnet build'
+        }
+
       }
     }
   }
