@@ -4,9 +4,7 @@ pipeline {
     stage('test') {
       steps {
         dir(path: 'CoreWebApp') {
-          sh '''docker -v
-
-done'''
+          sh 'docker -v'
         }
 
         echo 'Hello World!'
