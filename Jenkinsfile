@@ -4,7 +4,9 @@ pipeline {
     stage('test') {
       steps {
         dir(path: 'CoreWebApp') {
-          sh 'docker -v'
+          sh '''docker -v
+
+done'''
         }
 
         echo 'Hello World!'
@@ -12,6 +14,6 @@ pipeline {
     }
   }
   environment {
-    PATH = '/usr/local/bin'
+    PATH = '/usr/bin:/usr/local/bin'
   }
 }
