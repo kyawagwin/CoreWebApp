@@ -1,12 +1,12 @@
 pipeline {
   agent {
     node {
-      label 'compile'
+      label 'master'
     }
 
   }
   stages {
-    stage('compile') {
+    stage('web') {
       steps {
         dir(path: 'CoreWebApp') {
           bat 'dotnet restore'
