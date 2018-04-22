@@ -1,10 +1,10 @@
-node {
-    stage 'Checkout'
-        checkout scm
-
-    stage 'Build'
-        bat 'rake build'
-
-    stage 'Test'
-        bat 'rake test'
+stage('compile') {
+  node {
+    checkout scm
+    stash 'everything'
+    dir('CoreWebApp') {
+      bat 'dotnet restore'
+      bat "dotnet build"
+    }
+  }
 }
