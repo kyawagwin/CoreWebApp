@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApp", "CoreWebApp\CoreWebApp.csproj", "{CAE5ED30-633A-47E8-91BD-5A367B8058FD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1777524B-8BA7-45DA-8696-A9AE12ADCBC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAE5ED30-633A-47E8-91BD-5A367B8058FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE5ED30-633A-47E8-91BD-5A367B8058FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE5ED30-633A-47E8-91BD-5A367B8058FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE5ED30-633A-47E8-91BD-5A367B8058FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1777524B-8BA7-45DA-8696-A9AE12ADCBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1777524B-8BA7-45DA-8696-A9AE12ADCBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1777524B-8BA7-45DA-8696-A9AE12ADCBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1777524B-8BA7-45DA-8696-A9AE12ADCBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
