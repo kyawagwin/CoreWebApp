@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'CoreWebApp/dockerfile'
+    docker {
+      image 'microsoft/aspnetcore:2.0'
     }
 
   }
