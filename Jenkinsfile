@@ -1,18 +1,9 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'docker-compose.yml'
-    }
-
-  }
+  agent any
   stages {
-    stage('web') {
+    stage('test') {
       steps {
-        dir(path: 'CoreWebApp') {
-          sh 'dotnet restore'
-          sh 'dotnet build'
-        }
-
+        echo 'Hello World!'
       }
     }
   }
