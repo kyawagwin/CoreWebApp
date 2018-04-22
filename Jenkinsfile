@@ -14,6 +14,6 @@ done'''
     }
   }
   environment {
-    PATH = '/usr/bin:/usr/local/bin'
+    PATH = '/bin:/usr/bin:/usr/local/bin'
   }
 }
